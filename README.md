@@ -1,12 +1,12 @@
-BA DISTRO
+AR-Distro
 ==
-Distribución Drupal gratuita de la Dirección General de Gobierno Electrónico
+Distribución Drupal gratuita del Gobierno Nacional
 
-Desarrollamos BAdistro, un perfil de instalación de Drupal compuesto por un conjunto de módulos para instalar y configurar de forma pre-determinada con la finalidad de que todos los gobiernos tengan acceso a las funcionalidades más importantes de una web gubernamental. 
+Desarrollamos AR-Distro como extensión de BAdistro, realizada por el Gobierno de la Ciudad de Buenos Aires. Es un perfil de instalación de Drupal compuesto por un conjunto de módulos para instalar y configurar de forma pre-determinada con la finalidad de que todos los gobiernos tengan acceso a las funcionalidades más importantes de una web gubernamental. 
 
-Basada en nuestra experiencia con el sitio web buenosaires.gob.ar, la interacción con los ciudadanos y las necesidades de las diferentes áreas de gobierno, nace nuestra intención de contribuir a la comunidad Drupal con la experiencia de nuestro equipo y a los gobiernos que decidan sumarse a la experiencia de desarrollar su sitio web en una plataforma colaborativa y de administración descentralizada.
+Basada en la experiencia del equipo del Gobierno de la Ciudad con el sitio web buenosaires.gob.ar, la interacción con los ciudadanos y las necesidades de las diferentes áreas de gobierno, surgió esta intención de contribuir a la comunidad Drupal y a otros gobiernos del país.
 
-BAdistro 1.0 contiene:
+AR-Distro 1.0 contiene:
 
 * Layout responsive: Diseño adaptable a todo tipo de dispositivo
 * Carrousel: Permite filtrar por tipo de contenidos a mostrar, elegir la cantidad de items a presentar y a su vez, por categoría de noticias o tipo de trámite

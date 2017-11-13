@@ -47,7 +47,7 @@ Para instalar una AR-Distro en ARSAT, lo primero es crear una instancia con el s
 Actualizar YUM e instalar algunas herramientas que vamos a necesitar:
 
     yum update
-    yum install nano iptables-services git
+    yum install iptables-services git
 
 Instalar y activar Apache:
 

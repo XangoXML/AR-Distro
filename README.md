@@ -1,6 +1,6 @@
 # AR-Distro
 
-Distribución Drupal gratuita del Gobierno Nacional
+Distribución Drupal gratuita del Gobierno Nacional.
 
 Desarrollamos AR-Distro como extensión de BAdistro, realizada por el Gobierno de la Ciudad de Buenos Aires. Es un perfil de instalación de Drupal compuesto por un conjunto de módulos para instalar y configurar de forma pre-determinada con la finalidad de que todos los gobiernos tengan acceso a las funcionalidades más importantes de una web gubernamental. 
 
@@ -42,7 +42,7 @@ Luego desde el browser entrar a path/al/webroot y seguir los pasos de la instala
 
 ## En ARSAT
 
-Para instalar una AR-Distro en ARSAT, lo primero es crear una instancia de CentOS 6. Luego ejecuta los siguientes comandos via SSH como root.
+Para instalar una AR-Distro en ARSAT, lo primero es crear una instancia con el sistema operativo CentOS 6. Luego ejecuta los siguientes comandos via SSH como root. Estos comandos están tomados en parte de [esta guía](https://extravm.com/billing/knowledgebase/34/Install-LAMP-on-CentOS-6-MySQL-55-PHP-56.html).
 
 Actualizar YUM e instalar algunas herramientas que vamos a necesitar:
 

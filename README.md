@@ -56,9 +56,8 @@ Instalar y activar Apache:
 
 Habilitar el acceso al servidor a través del puerto 80:
 
-    nano /etc/sysconfig/iptables
-    // Agregar antes del primer INPUT: -A INPUT -p tcp --dport 80 -j ACCEPT
-    service iptables restart
+    iptables -I INPUT 1 -p tcp --dport 80 -j ACCEPT
+    service iptables save
 
 Instalar MySQL 5.5:
 

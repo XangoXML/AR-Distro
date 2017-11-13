@@ -28,8 +28,8 @@ Alerta: Permite elegir el tipo de alerta (success, danger, warning, info) y pers
 Un servidor con:
 
 * Apache (http://www.apache.org/dyn/closer.cgi)
-* MySQL (https://www.mysql.com/downloads/)
-* PHP (http://www.php.net/downloads)
+* MySQL 5.5 (https://www.mysql.com/downloads/)
+* PHP 5.6 (http://www.php.net/downloads)
 * Drush (https://www.drupal.org/project/drush)
 
 # Instalación

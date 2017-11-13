@@ -46,12 +46,12 @@ Para instalar una AR-Distro en ARSAT, lo primero es crear una instancia con el s
 
 Actualizar YUM e instalar algunas herramientas que vamos a necesitar:
 
-    yum update
-    yum install iptables-services git
+    yum update -y
+    yum install -y iptables-services git
 
 Instalar y activar Apache:
 
-    yum install httpd
+    yum install -y httpd
     service httpd start
 
 Habilitar el acceso al servidor a través del puerto 80:
@@ -62,13 +62,13 @@ Habilitar el acceso al servidor a través del puerto 80:
 Instalar MySQL 5.5:
 
     rpm -Uvh https://mirror.webtatic.com/yum/el6/latest.rpm
-    yum remove mysql-libs*
-    yum install mysql55w-server
+    yum remove -y mysql-libs*
+    yum install -y mysql55w-server
     /usr/bin/mysql_secure_installation
 
 Instalar PHP 5.6 y algunas extensiones útiles:
 
-    yum install php56w php56w-mbstring php56w-mysql php56w-sqlite php56w-gd php56w-xml php56w-cli
+    yum install -y php56w php56w-mbstring php56w-mysql php56w-sqlite php56w-gd php56w-xml php56w-cli
 
 Instalar [Composer](https://getcomposer.org/download/):
 

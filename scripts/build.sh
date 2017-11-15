@@ -98,7 +98,7 @@ fi
 
 # Build the profile.
 echo "Building the profile..."
-drush make --no-cache --no-core --contrib-destination="." drupal-org.make tmp
+vendor/bin/drush make --no-cache --no-core --contrib-destination="." drupal-org.make tmp
 
 # Build a drupal-org-core.make file if it doesn't exist.
 if [ ! -f drupal-org-core.make ]; then
@@ -111,7 +111,7 @@ fi
 
 # Build the distribution and copy the profile in place.
 echo "Building the distribution..."
-drush make --prepare-install drupal-org-core.make $TEMP_BUILD
+vendor/bin/drush make --prepare-install drupal-org-core.make $TEMP_BUILD
 echo -n "Moving to destination... "
 cp -r tmp $TEMP_BUILD/profiles/badistro
 rm -rf tmp

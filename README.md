@@ -49,7 +49,7 @@ Actualizar YUM e instalar algunas herramientas que vamos a necesitar:
     yum update -y
     yum install -y iptables-services git
 
-Instalar y activar Apache:
+Instalar Apache:
 
     yum install -y httpd
     service httpd start
@@ -70,8 +70,13 @@ Instalar PHP 5.6 y algunas extensiones útiles:
 
     yum install -y php56w php56w-mbstring php56w-mysql php56w-sqlite php56w-gd php56w-xml php56w-cli
 
-Instalar [Composer](https://getcomposer.org/download/):
+En cualquier directorio **privado** del servidor, clonar el repo de AR-Distro:
 
+    git clone https://github.com/argob/AR-Distro
+
+Dentro del directorio creado, instalar [Composer](https://getcomposer.org/download/):
+
+    cd AR-Distro
     php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
     php composer-setup.php
     php -r "unlink('composer-setup.php');"
@@ -80,9 +85,8 @@ Instalar Drush:
 
     php composer.phar require drush/drush
 
-Instalar una AR-Distro:
+Ejecutar el script de instalación de AR-Distro, especificando el path al directorio **público** del servidor:
 
-    git clone https://github.com/argob/AR-Distro
-    sh scripts/build.sh path/al/webroot
+    sh scripts/build.sh /path/al/webroot
 
-Luego visitar el webroot y seguir las instrucciones de instalación de Drupal.
+Luego visitar el sitio con un navegador y seguir las instrucciones de instalación de Drupal.

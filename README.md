@@ -30,7 +30,7 @@ Un servidor con:
 * Apache (http://www.apache.org/dyn/closer.cgi)
 * MySQL 5.5 (https://www.mysql.com/downloads/)
 * PHP 5.6 (http://www.php.net/downloads)
-* Drush (https://www.drupal.org/project/drush)
+* Drush (http://docs.drush.org/en/master/install/)
 
 # Instalación
 

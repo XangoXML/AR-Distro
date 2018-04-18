@@ -42,7 +42,7 @@ Luego desde el browser entrar a path/al/webroot y seguir los pasos de la instala
 
 ## En ARSAT (con Redhat 7)
 
-Debido a que ARSAT está ofreciendo servidores que tienen instalado el sistema operativo Redhat 7 es necesario hacer una nueva revisión del instructivo de instalación de la distribución que se encuentra a continuación. Varios de los siguientes pasos ya estaban presentes en el instructivo de instalación en ARSAT con el sistema operativo CentOs 6. Todos los siguientes pasos deben ser ejecutados utilizando un usuario con permisos de administrador. 
+Debido a que ARSAT está ofreciendo servidores que tienen instalado el sistema operativo Redhat 7 es necesario hacer una nueva revisión del instructivo de instalación de la distribución. Varios de los siguientes pasos ya estaban presentes en el instructivo de instalación en ARSAT con el sistema operativo CentOs 6, todos los pasos deberán ser ejecutados utilizando un usuario con permisos de administrador. 
 
 Actualizar YUM e instalar algunas herramientas que vamos a necesitar:
 
@@ -71,13 +71,13 @@ Instalar MySQL 5.5:
     service mysqld start
     /usr/bin/mysql_secure_installation
 
-Actualizar la lista de repositorios de Redhat 7 ingresando aquellos repositorios que nos permita instalar la versión 5.6 de PHP y otros paquetes asociados:
+Actualizar la lista de repositorios de Redhat 7 ingresando aquellos repositorios que nos permitan instalar la versión 5.6 de PHP y otros paquetes asociados:
 
     rpm -Uvh https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
     rpm -Uvh https://mirror.webtatic.com/yum/el7/webtatic-release.rpm
     yum clean all
 
-yum clean all es un paso necesario debido a que sin ejecutarlo yum devuelve Requires: libgmp.so.3()(64bit) al instalar PHP
+la ejecución del comando yum clean all es un paso necesario debido a que sin ejecutarlo yum devuelve Requires: libgmp.so.3()(64bit) al instalar PHP
 
 Instalar PHP 5.6 y algunas extensiones útiles:
 

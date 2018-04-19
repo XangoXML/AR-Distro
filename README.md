@@ -92,7 +92,7 @@ El interprete de PHP mostrará un listado de advertencias y errores relacionados
 
 warning Unable to load dynamic library '/usr/lib64/php/modules/mysql.so'
 
-Es necesario optar por instalar por la librería mysqlnd que es una versión mejorada de la tradicional php-mysql. Remover los archivos instalados de la librería php-mysql:
+Es necesario optar por instalar la librería mysqlnd que es una versión mejorada de la tradicional php-mysql. A continuación deben removerse los archivos instalados de la librería php-mysql e instalar la librería mysqlnd:
 
     yum remove php56w-mysql
     yum install php56w-mysqlnd
@@ -121,10 +121,20 @@ El propietario de los archivos de instalación debe ser el usuario que corre el 
     chown -R apache:apache /path/al/webroot
     chmod -R 755 /path/al/webroot
 
+Modificar el archivo de configuración de Apache para que con la opción de acceso AllowOverride All permita el uso del archivo .htaccess que es necesario para efectuar la parte final de la instalación. El archivo de configuración de Apache puede estar localizado en /etc/httpd/conf/httpd.conf
+
+En el archivo dejar en la sección DocumentRoot "/var/www/html" las siguientes opciones:
+
+    Options FollowSymLinks
+    AllowOverride All
+    Require all granted
+
 Reiniciar apache y el contexto de seguridad para archivos y directorios del webroot
 
     service httpd restart
     restorecon -r /var/www/html
+
+Luego visitar el sitio con un navegador y seguir las instrucciones de instalación de Drupal.
 
 ## En ARSAT (Con CentOS 6)
 
